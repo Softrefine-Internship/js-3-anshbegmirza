@@ -9,3 +9,18 @@
 // Output: false
 
 
+'use strict';
+const obj1 = { name: "John", age: 23, degree: "CS" };
+const obj2 = { age: 23, degree: "CS" };
+
+let isTrue = false;
+for (const pro1 in obj1) {
+  console.log(`${pro1}: ${obj1[pro1]}`);
+  for (const pro2 in obj2)
+    if (pro1 === pro2) {
+      isTrue = true;
+      console.log(isTrue);
+    }
+    else
+      console.log(isTrue);
+}
